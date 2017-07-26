@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="cover">
+        <div id="oneTab" class="tabs">Первый</div>
+        <div id="twoTab" class="tabs notUse">Второй</div>
+        <div id="threeTab" class="tabs notUse">Третий</div>
+        <div id="fourTab" class="tabs notUse">Четвертый</div>
+
+        <div id="oneText" class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos illum porro quas ullam.
+                Atque iste laborum molestiae reiciendis voluptatum?
+            </p>
+        </div>
+        <div id="twoText" class="text notUseText">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque blanditiis incidunt iste
+                officiis similique ut, voluptatem. Cumque, iusto repellat. Animi asperiores, autem consectetur
+                consequuntur corporis delectus dolores facere hic incidunt ipsa laboriosam obcaecati provident quae quam
+                quas similique, temporibus ullam velit veniam veritatis voluptatem.
+            </p>
+        </div>
+        <div id="threeText" class="text notUseText">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque doloribus explicabo ipsa
+                itaque iure laudantium libero reprehenderit veniam vero?
+            </p>
+        </div>
+        <div id="fourText" class="text notUseText">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci asperiores assumenda,
+                blanditiis dolorem enim est facilis inventore ipsam labore laudantium minima nam optio quia quod ratione
+                reiciendis vero voluptates. Architecto consequatur cupiditate, dolore ducimus fugiat itaque maxime natus
+                velit.
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+           $('#oneTab').on('click', function () {
+                $('.tabs').addClass('notUse');
+                $(this).removeClass('notUse');
+
+                $('.text').addClass('notUseText');
+                $('#oneText').removeClass('notUseText');
+            });
+
+            $('#twoTab').on('click', function () {
+                $('.tabs').addClass('notUse');
+                $(this).removeClass('notUse');
+
+                $('.text').addClass('notUseText');
+                $('#twoText').removeClass('notUseText');
+            });
+
+            $('#threeTab').on('click', function () {
+                $('.tabs').addClass('notUse');
+                $(this).removeClass('notUse');
+
+                $('.text').addClass('notUseText');
+                $('#threeText').removeClass('notUseText');
+            });
+
+            $('#fourTab').on('click', function () {
+                $('.tabs').addClass('notUse');
+                $(this).removeClass('notUse');
+
+                $('.text').addClass('notUseText');
+                $('#fourText').removeClass('notUseText');
+            });
+        });
+    </script>
+
+
+</body>
+</html>

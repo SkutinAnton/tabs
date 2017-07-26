@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #F6F6F6;
+}
+
+p {
+    padding: 20px 0;
+}
+
+.cover {
+    width: 600px;
+    margin: 100px auto;
+}
+
+.tabs {
+    float: left;
+    padding: 5px 20px;
+    margin-right: 2px;
+    background: #fff;
+    border: 2px solid #7DCA86;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    height: 21px;
+    position: relative;
+
+}
+
+.notUse {
+    float: left;
+    padding: 5px 20px;
+    margin-right: 2px;
+    background: #61AF6A;
+    border: 2px solid #61AF6A;
+    border-radius: 10px 10px 0 0;
+    color: #ffffff;
+    height: 17px;
+}
+
+.notUse:hover {
+    cursor: pointer;
+    background: #69be73;
+    border-color: #69be73;
+}
+
+.text {
+    float: left;
+    background: #FFF;
+    border: 2px solid #7DCA86;
+    border-radius: 0 5px 5px 5px;
+    padding: 7px 15px;
+    margin-top: -2px;
+}
+
+.notUseText {
+    display: none;
+}
